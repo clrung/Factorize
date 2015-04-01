@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:weightSum="1">
+	<EditText android:id="@+id/numText" android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:inputType="number"
+		android:layout_margin="15dp">
+		<requestFocus></requestFocus>
+	</EditText>
+	<Button android:layout_width="match_parent" android:id="@+id/factorizeButton"
+		android:text="Factorize!" android:layout_margin="15dp"
+		android:layout_height="wrap_content">
+	</Button>
+	<ScrollView android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout1"
+		android:orientation="vertical">
+		<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="" android:layout_height="wrap_content" android:id="@+id/resultLabel"
+			android:layout_width="match_parent" android:gravity="center_horizontal"
+			android:layout_weight="0.32">
+		</TextView>
+	</ScrollView>
+	<RelativeLayout android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<ProgressBar style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="wrap_content" android:id="@+id/progressBar"
+			android:layout_width="match_parent" android:layout_weight="0.04"
+			android:padding="15dp" android:layout_alignParentBottom="true"
+			android:visibility="invisible">
+		</ProgressBar>
+	</RelativeLayout>
+</LinearLayout> 
